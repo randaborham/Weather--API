@@ -1,0 +1,139 @@
+body {
+  background-color: #1e202b;
+}
+.active {
+  color: #009ad8 !important;
+  /* border: 2px solid #009ad8 !important; */
+  position: relative;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  border-radius: 30px;
+  border: 1px solid #009ad8;
+  top: 0;
+  left: -11px;
+  text-align: center;
+}
+.nav-item a {
+  position: relative;
+}
+.nav-item:hover a {
+  color: #009ad8 !important;
+}
+.nav-item:hover:not(.good, .good2) a::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 100%;
+  border-radius: 30px;
+  border: 1px solid #009ad8;
+  top: 0;
+  left: -15px;
+  text-align: center;
+}
+.good:hover a::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 100%;
+  border-radius: 30px;
+  border: 1px solid #009ad8;
+  top: 0;
+  left: -10px;
+  text-align: center;
+}
+.good2:hover a::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  border-radius: 30px;
+  border: 1px solid #009ad8;
+  top: 0;
+  left: -10px;
+  text-align: center;
+}
+.small {
+  font-size: 10px !important;
+}
+.footer {
+  background-color: #262936;
+  /* height: 200px; */
+  margin-top: 100px;
+}
+.social-links a {
+  background-color: #1e202b;
+  border-radius: 50%;
+  width: 50px !important;
+  height: 50px !important;
+  display: inline-block;
+  padding: 10px;
+}
+form .input1 {
+  background-color: #1e202b !important;
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+}
+form .input2 {
+  position: absolute;
+  border-radius: 20px;
+  background-color: #009ad8;
+  border: none;
+  color: white;
+  right: 0;
+  height: 100%;
+  padding: 10px;
+}
+form {
+  position: relative;
+}
+.social-links i:hover {
+  color: white !important;
+}
+.social-links a:hover {
+  background-color: #009ad8 !important;
+}
+.parent {
+  position: absolute;
+  top: 70%;
+  left: 100px;
+}
+.card {
+  height: 400px;
+}
+::placeholder {
+  color: white !important;
+}
+input:focus {
+  border-color: #009ad8 !important;
+}
+textarea:focus {
+  border-color: #009ad8 !important;
+}
+
+input,
+textarea {
+  outline: none !important;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#arrow:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  .subscribe-form {
+    width: 100% !important;
+  }
+  .alert {
+    margin-bottom: 10px !important;
+  }
+}

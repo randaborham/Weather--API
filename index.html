@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Chewy&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container p-lg-5">
+        <a class="navbar-brand d-flex" href="#"
+          ><img src="logo.png" class="w-100 h-50 me-2" />
+          <div class="logo-type">
+            <h1 class="fs-5">Weather</h1>
+            <p class="fs-6 small">tagline goes here</p>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item m-3">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item m-3">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item m-3 good">
+              <a class="nav-link" href="#">Live Camera</a>
+            </li>
+            <li class="nav-item m-3">
+              <a class="nav-link" href="#">Photo</a>
+            </li>
+            <li id="contact" class="nav-item m-3 good2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg py-5 p-lg-5" style="background-image: url(image/banner.png)">
+      <div class="container">
+        <form action="#" class="subscribe-form">
+          <input
+            id="inputlocation"
+            class="input1"
+            type="text"
+            placeholder="Find your location..."
+          />
+          <input
+            style="width: 100px"
+            class="input2 p-3 fs-7"
+            type="submit"
+            value="Find"
+          />
+        </form>
+      </div>
+      <div class="container parent">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card text-white" style="background-color: #323544">
+              <div
+                class="layer text-white d-flex justify-content-between p-1"
+                style="background-color: #262936c5"
+              >
+                <p id="datetoday">Tuesday</p>
+                <p>
+                  <span class="me-1" id="numbertoday"></span
+                  ><span id="monthtoday"></span>
+                </p>
+              </div>
+              <div class="">
+                <div class="content ps-5" id="">
+                  <div id="loction" class="location">Cairo</div>
+                  <div class="">
+                    <div class="num fw-bold" style="font-size: 60px">
+                      <span id="tempret">15.6</span><sup>o</sup>C
+                    </div>
+                    <div class="image">
+                      <img
+                        id="icon"
+                        src="https://cdn.weatherapi.com/weather/64x64/night/116.png"
+                        alt=""
+                        width="90"
+                      />
+                    </div>
+                  </div>
+                  <div id="text" class="mb-4" style="color: #009ad8">
+                    Partly cloudy
+                  </div>
+                  <span class="me-3"
+                    ><img src="icon-umberella.png" alt="" /><span id="temp1"
+                      >20%</span
+                    >
+                  </span>
+                  <span class="me-3"
+                    ><img src="icon-wind.png" alt="" />
+                    <span id="temp2">18km/h</span></span
+                  >
+                  <span class="me-3"
+                    ><img src="icon-compass.png" alt="" />
+                    <span id="temp3">East</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="card text-white text-center"
+              style="background-color: #262936"
+            >
+              <div
+                class="layer text-white d-flex p-2 justify-content-center"
+                style="background-color: #262936c5"
+              >
+                <p class="text-center nextdata">Wednesday</p>
+              </div>
+              <div class="content mt-5">
+                <div class="image mb-3">
+                  <img
+                    class="imgnext"
+                    src="https://cdn.weatherapi.com/weather/64x64/day/122.png"
+                    alt=""
+                    width="48"
+                  />
+                </div>
+                <div class="tempnext degree mb-3 fw-bold fs-3"></div>
+                <small> <span class="tempnext2">14.3</span> <sup>o</sup></small>
+                <div class="mt-2 textnext" style="color: #009ad8">Overcast</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="card text-white text-center"
+              style="background-color: #323544"
+            >
+              <div
+                class="layer text-white d-flex p-2 justify-content-center"
+                style="background-color: #262936c5"
+              >
+                <p class="text-center nextdata">Tuesday</p>
+              </div>
+              <div class="content mt-5">
+                <div class="image">
+                  <img
+                    class="imgnext"
+                    src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                    alt=""
+                    width="48"
+                  />
+                </div>
+                <div class="tempnext degree mb-3 fw-bold fs-3"></div>
+                <small> <span class="tempnext2">13.7</span><sup>o</sup></small>
+                <div class="custom mt-3 textnext" style="color: #009ad8">
+                  Sunny
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer p-5">
+      <div class="container-fluid">
+        <div class="row g-5">
+          <div class="col-md-8">
+            <form action="#" class="subscribe-form">
+              <input
+                class="input1"
+                type="text"
+                placeholder="Enter your email to subscribe..."
+              />
+              <input class="input2" type="submit" value="Subscribe" />
+            </form>
+          </div>
+          <div class="col-lg-3">
+            <div class="social-links">
+              <a href="#"><i class="fs-5 me-3 fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fs-5 me-3 fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fs-5 me-3 fa-brands fa-google"></i></a>
+              <a href="#"><i class="fs-5 me-3 fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+          <p class="text-white ms-3">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="footer p-lg-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-8">
+            <form action="#" class="subscribe-form">
+              <input
+                class="input1"
+                type="text"
+                placeholder="Enter your email to subscribe..."
+              />
+              <input class="input2" type="submit" value="Subscribe" />
+            </form>
+          </div>
+          <div class="col-lg-3">
+            <div class="social-links">
+              <a href="#"><i class="fs-3 me-3 fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fs-3 me-3 fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fs-3 me-3 fa-brands fa-google"></i></a>
+              <a href="#"><i class="fs-3 me-3 fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+          <p class="text-white ms-3">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
